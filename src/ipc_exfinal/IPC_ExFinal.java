@@ -9,7 +9,8 @@ public class IPC_ExFinal {
 
     public static void main(String[] args) {
         //Usar otras clases
-        Programa1 prog1= new Programa1();
+        Ejercicio1 prog1= new Ejercicio1();
+        Ejercicio2 prog2= new Ejercicio2();
         
         //Scanner
         int option;
@@ -21,8 +22,8 @@ public class IPC_ExFinal {
         {
             //Menu de 4 opciones
         System.out.println("\nBienvenido seleccione una opción del menú");
-        System.out.println("1.Programa 1");
-        System.out.println("2.Programa 2");
+        System.out.println("1.Comparar números");
+        System.out.println("2.Dibujar árbol");
         System.out.println("3.Programa 3");
         System.out.println("4.Salir del programa");
         
@@ -32,10 +33,10 @@ public class IPC_ExFinal {
         
             switch (option){
                 case 1:
-                    prog1.sumaNumeros();
+                    prog1.compararNumeros();
                     break;
                 case 2:
-                    System.out.println("Opción 2");
+                    prog2.arbol();
                     break;
                 case 3:
                     System.out.println("Opción 3");
